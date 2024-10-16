@@ -1,4 +1,4 @@
-var swiper = new Swiper(".swiper", {
+var swiper1 = new Swiper(".swiper-1", {
     effect: 'fade',
     speed:2000,
     fadeEffect: {
@@ -10,6 +10,12 @@ var swiper = new Swiper(".swiper", {
       delay: 4000,
       disableOnInteraction: false,
     },
+  });
+
+  var swiper2 = new Swiper(".swiper-2", {
+    slidesPerView: 3,
+    speed: 600,
+    spaceBetween: 30,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -18,4 +24,16 @@ var swiper = new Swiper(".swiper", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 30
+      },
+      // when window width is >= 640px
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 40
+      }
+    }
   });

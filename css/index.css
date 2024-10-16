@@ -1,8 +1,8 @@
-.swiper {
+.swiper-1 {
     width: 100%;
     height: 100vh;
 }
-.swiper-slide img{
+.swiper-1 .swiper-slide img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -11,9 +11,9 @@
     position: absolute;
     bottom: 100px;
     left: 150px;
-    font-size: 16px;
+    font-size: 1em;
     color: #fff;
-    text-align: center;
+    text-shadow:2px 2px 6px #444;
 }
 
 .about {
@@ -25,7 +25,7 @@
     background-position: 0%;
     background-size: cover;
     display: block;
-    width: 70%;
+    width: 80%;
     height: 80vh;
     margin: auto;
 }
@@ -35,8 +35,75 @@
 .about-caption {
     margin-top: 20px;
 }
-
-.crop {
-    width: 30%;
+.about-btn {
+    max-width: 160px;
     margin-top: 50px;
+}
+
+.projects {
+    background: #ededed;
+    padding: 140px 0;
+}
+.projects-heading {
+    padding-top: 28px;
+    border-top: 1px solid #666;
+    margin-bottom: 50px;
+}
+.projects-heading .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.projects-view {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.swiper-2 {
+    width: 100%;
+
+}
+.projects-container {
+    width: 87%;
+}
+.projects-list {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    box-sizing: content-box;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-2 .swiper-slide img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+.swiper-button-prev::after{
+    color: #666;
+}
+.swiper-button-next::after{
+    color: #666;
+    content: '\f138';
+}
+
+.images-inner {
+    height: 80vh;
+    background-size: cover;
+    background-position: center 60%;
+}
+
+@media screen and (max-width:640px){
+    .caption {
+        bottom: 50px;
+        left: 50px;
+        font-size: 1em;
+    }
+
+    .images-inner {
+        height: 40vh;
+    }
+
 }

@@ -96,17 +96,30 @@ a {
 .crop-text {
     display: flex;
     justify-content: space-between;
+    color: #666;
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
 }
-.crop::after {
-    content:" ";
-    display:block; 
-    width: 0%;
-    height: 1px;
-    background-color: #444;
-    transition: .4s .2s;
+.crop-text:hover{
+    color: #000;
 }
-.crop:hover::after{
-    width:100%;
+
+.footer {
+    font-size: 12px;
+    padding: 30px 80px;
+}
+.footer-right{
+    display: flex;
+    justify-content: flex-end;
+}
+.icon {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.icon-text {
+    position: relative;
+    margin: 0 8px;
 }
 
 @media screen and (min-width:981px){
@@ -125,5 +138,12 @@ a {
 @media screen and (max-width:640px){
     .header{
         padding: 10px 20px;
+    }
+    .footer {
+        padding: 30px 20px;   
+    }
+    .footer-right{
+        margin-top: 10px;
+        justify-content: flex-start;
     }
 }
