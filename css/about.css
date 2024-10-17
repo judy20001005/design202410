@@ -34,9 +34,6 @@
 .design{
     margin-bottom: 50px;
 }
-.design-info{
-    padding-left: 50px;
-}
 .design-title {
     margin-top: 50px;
     letter-spacing: 5px;    
@@ -53,6 +50,7 @@
 }
 .design-img{
     margin: auto;
+    margin-right: 50px;
 }
 .design-img .images {
     display: block;
@@ -70,7 +68,7 @@
 }
 
 
-@media screen and (max-width:640px){
+@media screen and (max-width:980px){
 
     .about {
         margin-top: 20px;
