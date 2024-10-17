@@ -11,7 +11,7 @@
     position: absolute;
     bottom: 100px;
     left: 150px;
-    font-size: 1em;
+    font-size: 20px;
     color: #fff;
     text-shadow:2px 2px 6px #444;
 }
@@ -48,18 +48,23 @@
     padding-top: 28px;
     border-top: 1px solid #666;
     margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.projects-heading .title {
+.projects-heading .title{
+    font-size: 32px;
+}
+.projects-view{
+    width: 100px;
+}
+.projects-name{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 10px;
+}
 
-}
-.projects-view {
-    display: flex;
-    align-items: center;
-    justify-content: right;
-}
 .swiper-2 {
     width: 100%;
 
@@ -67,26 +72,15 @@
 .projects-container {
     width: 87%;
 }
-.projects-list {
-    display: flex;
-    position: relative;
-    z-index: 1;
-    box-sizing: content-box;
-    width: 100%;
-    height: 100%;
-}
 
 .swiper-2 .swiper-slide img{
-    display: block;
     width: 100%;
-    object-fit: cover;
 }
 .swiper-button-prev::after{
     color: #666;
 }
 .swiper-button-next::after{
     color: #666;
-    content: '\f138';
 }
 
 .images-inner {
@@ -99,7 +93,11 @@
     .caption {
         bottom: 50px;
         left: 50px;
-        font-size: 1em;
+        font-size: 16px;
+    }
+
+    .projects-heading .title {
+        font-size: 24px;
     }
 
     .images-inner {
