@@ -13,6 +13,7 @@ var swiper1 = new Swiper(".swiper-1", {
   });
 
   var swiper2 = new Swiper(".swiper-2", {
+    slidesPerView: 1,
     speed: 600,
     spaceBetween: 30,
     pagination: {
