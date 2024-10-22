@@ -13,7 +13,6 @@ var swiper1 = new Swiper(".swiper-1", {
   });
 
   var swiper2 = new Swiper(".swiper-2", {
-    slidesPerView: 1,
     speed: 600,
     spaceBetween: 30,
     pagination: {
@@ -32,8 +31,12 @@ var swiper1 = new Swiper(".swiper-1", {
       },
       // when window width is >= 640px
       640: {
+        slidesPerView: 2,
+        spaceBetween: 30
+      },
+      1024: {
         slidesPerView: 3,
-        spaceBetween: 40
+        spaceBetween: 30
       }
     }
   });
