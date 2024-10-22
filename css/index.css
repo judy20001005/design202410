@@ -85,7 +85,9 @@
     justify-content: space-between;
     margin-top: 10px;
 }
-
+.projects-title{
+    font-size: 20px;
+}
 .swiper-2 {
     width: 100%;
 

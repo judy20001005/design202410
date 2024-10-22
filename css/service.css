@@ -1,0 +1,141 @@
+.service{
+    margin-top: 80px;
+}
+.process-title{
+    width: 30%;
+    font-size: 24px;
+    border-bottom: 1px solid ;
+    display: flex;
+    justify-content: right;
+    padding-right: 0;
+    padding-bottom: 20px;
+}
+.process-content{
+    padding: 0 150px;
+}
+.process-content, .title {
+    padding-bottom: 10px;
+}
+.step{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.step-img{
+    width: 40%;
+    max-width: 400px;
+}
+.step-img img {
+    width: 100%;
+}
+.step-content{
+    width: 60%;
+    padding-left: 20px;
+}
+.step-title{
+    font-size: 14px;
+}
+.step-title ul{
+    font-size: 10px;
+
+}
+::marker {
+    font-size: 20px;
+  }
+
+.toll{
+    margin-top: 140px;
+    margin-bottom: 50px;
+}
+.toll-title{
+    position: relative;
+    width: 100%;
+    font-size: 24px;
+    text-align: right;
+    padding-right: 0;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+.toll-title::after{
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    width: 100vw;
+    height: 1px;
+    background-color: black;
+    content: "";
+}
+.sticky-side{
+    position: sticky;
+    top: 100px;
+    margin-bottom: 50px;
+}
+
+.sticky-img{
+    overflow: hidden;
+    width: 80%;
+    margin: auto;
+}
+.sticky-img img{
+    width: 100%;
+}
+
+.proposal-content {
+    padding: 20px 30px;
+    margin-bottom: 40px;
+}
+
+.proposal-block{
+    padding: 0px 20px;
+    background-color: #e0e0e0;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+
+
+@media screen and (max-width:640px){
+    
+    .process-title{
+        width: 80%;
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    .process-content{
+        padding: 0 10px;
+    }
+    
+    .step{
+        display: block;
+        padding: 0 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .step-img{
+        width: 100%;
+    }
+    .step-img img{
+        width: 100%;
+        padding:0 70px;
+    }
+    .step-content{
+        width: 100%;
+    }
+
+    .sticky-side{
+        margin-bottom: 0px;
+    }
+    .sticky-img{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .toll{
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+    .toll-title{
+        width: 80%;
+    }
+}
