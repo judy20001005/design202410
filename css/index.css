@@ -89,8 +89,7 @@
     font-size: 20px;
 }
 .swiper-2 {
-    width: 100%;
-
+    --swiper-navigation-size: 40px;
 }
 .projects-container {
     width: 87%;
@@ -100,9 +99,13 @@
     width: 100%;
 }
 .swiper-button-prev::after{
+    position: absolute;
+    bottom: 30px;
     color: #666;
 }
 .swiper-button-next::after{
+    position: absolute;
+    bottom: 30px;
     color: #666;
 }
 
