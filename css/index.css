@@ -1,3 +1,9 @@
+ul{
+    list-style: none;
+}
+em{
+    font-style: normal;
+}
 .swiper-1 {
     width: 100%;
     height: 100vh;
@@ -16,14 +22,15 @@
     text-shadow:2px 2px 6px #444;
 }
 
-.about {
-    padding: 140px 0;
+.about-container {
+    padding-left: 0;
+
 }
 
 .about-img{
+    margin-left: 0px;
     overflow: hidden;
-    width: 80%;
-    margin: auto;
+    width: 100%;
     transform: scale(1);
     transition: 0.5s ease-out;
 }
@@ -35,8 +42,11 @@
 .about-img:hover img{
     transform: scale(1.1);
 }
-.about-title {
-    margin-top: 100px;
+.about-txt{
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 .about-caption {
     margin-top: 20px;
@@ -91,31 +101,248 @@
     font-size: 16px;
 }
 .swiper-2 {
-    --swiper-navigation-size: 40px;
+    --swiper-navigation-color: black;
 }
 .projects-container {
     width: 87%;
+    
 }
 
-.swiper-2 .swiper-slide img{
+.swiper-2 .swiper-slide{
     width: 100%;
+    position: relative;
 }
-.swiper-button-prev::after{
-    height: 100px;
-    color: #666;
+.swiper-button-next::after, .swiper-button-prev::after{
+    display: none;
 }
-.swiper-button-next::after{
-    height: 100px;
-    color: #666;
+.swiper-button-next1, .swiper-button-prev1{
+    font-size: 30px;
+    top: 33%;
+    z-index: 10;
+}
+.swiper-button-next1{
+    position: absolute;
+    right: 10px;
+
+}
+.swiper-button-prev1{
+    position: absolute;
+    left: 10px;
 }
 
-.images-inner {
-    height: 80vh;
-    background-size: cover;
-    background-position: center 60%;
+.service{
+    background: #f7f7f7;
+    position: relative;
+}
+.service .wrap {
+    position: relative;
+    z-index: 4;
+    border-left: 1px solid #e7e7e7;
+    margin:0px 50px;   
+}
+.service-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+.service-list .titlebox{
+    padding: 50px 38px;
+    position: relative;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-right: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+.titlebox em {
+    font-size: 18px;
+    font-weight: bold;
+}
+.titlebox em i{
+    font-style: normal;
+}
+.service-list li{
+    padding: 50px 38px;
+    position: relative;
+    width: 25%;
+    border-right: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
 }
 
+.item .Img {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+.item .Img i{
+    font-size: 24px;
+}
+.stepnum{
+    font-size: 35px;
+    color: #696969;
+    line-height: 1;
+    text-align: center;
+}
+.stepnum::after{
+    content: "STEP";
+    font-size: 12px;
+    display: block;
+    letter-spacing: 3px;
+
+}
+.item .txt h3{
+    padding-bottom: 18px;
+    font-size: 18px;
+}
+.item .txt p{
+    padding-top: 15px;
+    font-size: 15px;
+    line-height: 24px;
+    position: relative;
+}
+.item .txt p::before{
+    content: "";
+    width: 23px;
+    height: 1px;
+    display: inline-block;
+    background: #7b7b7b;
+    margin-bottom: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.service .etbox {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 176px;
+    color: #eeeded;
+    line-height: 0.7;
+}
+.news{
+    background: url(../img/index/1.jpg) no-repeat right center #333437;
+    background-size: auto 100%;
+    padding: 150px 0;
+}
+.news .wrap {
+    margin:0px 50px;   
+}
+.newsbox{
+    background: #fff;
+    width: 80%;
+    padding: 50px 70px;
+    position: relative;
+}
+.titlebox h2 {
+    font-size: 45px;
+    font-weight: 300;
+}
+.slick-list{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-slide{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.newslist{
+    padding-left: 0;
+}
+.newslist li .item{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    line-height: 25px;
+    padding: 15px 0;
+    align-items: center;
+}
+.date{
+    font-size: 13px;
+    font-weight: 200;
+    margin-right: 20px;
+}
+.newicon {
+    color: #f6b62c;
+    background-color: #4f4f4f;
+    font-size: 12px;
+    padding: 0px 30px;
+    margin-right: 20px;
+    min-width: 120px;
+    text-align: center;
+}
+.newslist li .item h3 {
+    width: calc(100%-240px);
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+}
+.contralbar{
+    display: flex;
+    align-items: center;
+}
+.news-allnum{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.news-allnum::before{
+    content: "";
+    width: 60px;
+    height: 1px;
+    background: #c6c6c6;
+
+}
+.contralbar a{
+    font-size: 12px;
+}
+.newsbox .btn{
+    position: absolute;
+    top: 70px;
+    right: 70px;
+    display: flex;
+    align-items: center;
+}
+.newsbox .btn i{
+    margin-left: 5px;
+    font-size: 14px;
+}
+@media screen and (max-width:1240px){
+    .news .wrap{
+        width: 100%;
+        padding: 0 20px;
+        margin: 0;
+    }
+    .newsbox{
+        padding: 30px;
+    }
+    .newsbox .btn {
+        position: relative;
+        padding-top: 10px;
+        top: 0;
+        left: 0;
+    }
+    
+
+}
+@media screen and (max-width:1180px){
+    .service-list .titlebox, .service-list li{
+        width: 33%;
+    }
+
+}
 @media screen and (max-width:640px){
+    .about-txt{
+        padding: 50px 50px;
+    }
+    .about-title {
+        margin-top: 50px;
+    }
     .caption {
         bottom: 50px;
         left: 50px;
@@ -129,8 +356,40 @@
     .images-inner {
         height: 40vh;
     }
-
-    .about-title {
-        margin-top: 50px;
+    .service .wrap {
+        margin:0;   
+    }
+    .service-list .titlebox{
+        padding: 20px 10px;
+        width: 100%;
+        border-right: none;
+    }
+    
+    .service-list{
+        margin: 0;
+        padding: 0;
+    
+    }
+    .service-list li{
+        padding: 50px 20px;
+        position: relative;
+        width: 100%;
+    }
+    .news{
+        padding: 40px 0;
+    }
+    .newsbox{
+        background: #fff;
+        width: 100%;
+        padding: 30px;
+    }
+    .newslist li .item{
+        flex-wrap: wrap;
+    }
+    .newslist li .item h3 {
+        margin-top: 20px;
+    }
+    .news .wrap {
+        margin:0;   
     }
 }

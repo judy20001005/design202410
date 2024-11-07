@@ -15,6 +15,7 @@
      <link rel="stylesheet" href="css/index.css">
      
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
      <!-- AOS -->
      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -26,7 +27,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="header">
+        <header class="header">
             <div class="logo"><a href="index.html">Aesthetic Spaces</a></div>
             <div class="nav" id="linkbar">
                 <nav>
@@ -55,7 +56,7 @@
                 <script src="js/main.js"></script>
             </div>
 
-        </div>
+        </header>
 
          <!-- Swiper -->
         <div class="swiper swiper-1">
@@ -83,20 +84,21 @@
                 </div>
             </div>
         </div>
+        
 
 
         <div class="main">
-            <section class="about">
-                <div class="container">
+            <div class="about">
+                <div class="container-fluid about-container">
                     <div class="row">
-                        <div class="col-lg-6 col-md-11 col-12">
+                        <div class="col-lg-6 col-12">
                             <a href="about.html">
                                 <div class="about-img">
                                     <img src="img/index/about.jpg">
                                 </div>
                             </a>
                         </div>
-                        <div class="col-lg-6 col-md-11 col-12">
+                        <div class="col-lg-6 col-12 about-txt">
                             <div class="about-title fs-1">About Us</div>
                             <div class="about-caption fs-5">
                                     <p>
@@ -120,9 +122,9 @@
                         </div>                        
                     </div>
                 </div>
-        </section>
+            </div>
 
-        <section class="projects">
+        <div class="projects">
             <div class="container-fluid projects-container">
                 <div class="projects-heading row">
                     <div class="col-6 title">Latest projects</div>
@@ -208,16 +210,181 @@
                             </div>
                         </div>
 
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
+                        
+                        <div class="swiper-button-next1"><i class="fa-solid fa-circle-chevron-right"></i></div>
+                        <div class="swiper-button-prev1"><i class="fa-solid fa-circle-chevron-left"></i></div>
+                        
 
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <div class="images" data-aos="fade-down" data-aos-duration="500">
-            <div class="images-inner" style="background-image: url(img/index/1.jpg);"></div>
+        <div class="service">
+            <div class="wrap">
+                <ul class="service-list">
+                    <div class="titlebox">
+                        <em>
+                            <i>SERVICE</i>
+                            PROCESS
+                        </em>
+                        <h2>服務流程</h2>
+                    </div>
+                    <li>
+                        <div class="item">
+                            <div class="Img">
+                                <b class="stepnum">01</b>
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+                            <div class="txt">
+                                <h3>初步諮詢</h3>
+                                <p class="ellipsis">
+                                    了解業主需求、預算，解說設計作業流程
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="Img">
+                                <b class="stepnum">02</b>
+                                <i class="fa-solid fa-pen-ruler"></i>
+                            </div>
+                            <div class="txt">
+                                <h3>現場丈量</h3>
+                                <p class="ellipsis">
+                                    現場實際丈量、放現況圖樣
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="Img">
+                                <b class="stepnum">03</b>
+                                <i class="fa-solid fa-pen"></i>
+                            </div>
+                            <div class="txt">
+                                <h3>平面配置</h3>
+                                <p class="ellipsis">
+                                    設計風格方向確定，簽訂設計合約，並收取設計費用
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="Img">
+                                <b class="stepnum">04</b>
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+                            <div class="txt">
+                                <h3>細節討論</h3>
+                                <p class="ellipsis">
+                                    平面配置定案、細部設計討論
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="Img">
+                                <b class="stepnum">05</b>
+                                <i class="fa-solid fa-person-digging"></i>
+                            </div>
+                            <div class="txt">
+                                <h3>工程施工</h3>
+                                <p class="ellipsis">
+                                    依設計圖及工程進度進行施工，並簽訂合約
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="Img">
+                                <b class="stepnum">06</b>
+                                <i class="fa-solid fa-handshake"></i>
+                            </div>
+                            <div class="txt">
+                                <h3>完工交屋</h3>
+                                <p class="ellipsis">
+                                    業主驗收交屋、收取工程尾款費用
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="Img">
+                                <b class="stepnum">07</b>
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="txt">
+                                <h3>售後服務</h3>
+                                <p class="ellipsis">
+                                    完善的售後服務
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="etbox">
+                SERVICE
+            </div>
+        </div>
+
+        <div class="news" data-aos="fade-down" data-aos-duration="500">
+            <div class="wrap">
+                <div class="newsbox">
+                    <div class="titlebox">
+                        <em>
+                            <i>LATEST</i>
+                            NEWS
+                        </em>
+                        <h2>最新消息</h2>
+                    </div>
+                    <ul class="newslist">
+                        <div aria-live="polite" class="slick-list" style="height: 295px;">
+                            <div class="slick-track">
+                                <li class="slick-slide">
+                                    <div class="item">
+                                        <div class="date">
+                                            <b>2024\06\13</b>
+                                        </div>
+                                        <div class="newicon">最新快訊</div>
+                                        <h3>2023 金堂獎《Light Life》入圍</h3>
+                                    </div>
+                                </li>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class="contralbar">
+                        <a class="news-prev">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                        <b class="news-thisnum">
+                            <div aria-live="polite" class="slick-list">
+                                <div class="slick-track">
+                                    <li class="slick-slide">01</li>
+                                </div>
+                            </div>
+                        </b>
+                        <b class="news-allnum">01</b>
+                        <a class="news-next">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+                    <div class="btn">
+                        <a href="news.html">
+                            VIEW MORE
+                        <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
@@ -241,7 +408,7 @@
             </div>
         </div>
     </footer>
-    
+    </div>
          <!-- Swiper's JS -->
          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
          <script src="js/swiper.js"></script>
