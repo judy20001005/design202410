@@ -154,7 +154,19 @@ a {
     color: #fff;
     text-shadow:2px 2px 6px #444;
 }
+.scroll-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 100;
 
+}
+.scroll-top-container {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
 @media screen and (min-width:981px){
     .hamburger {
         display: none;
